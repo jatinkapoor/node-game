@@ -44,7 +44,7 @@ const Word = function (word) {
       str += letter.display();
     });
 
-    console.log('                                 ' + str + '       Guesses remaining:' + this.guessesRemaining);
+    console.log('                           ' + str + '       Guesses remaining:' + this.guessesRemaining);
   }
 
   // Checks if complete work has been guessed.

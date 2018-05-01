@@ -48,12 +48,12 @@ const getUserGuess = function (word) {
         getUserGuess(word);
       } else {
 
-        console.log("\n" + "                   Oops ! You ran out of your guesses !\n\n");
+        console.log("\n" + "                   Ohh No ! You ran out of your guesses !\n\n");
         startGame();
       }
     } else if (word.guessedAll) {
 
-      console.log("\n" + "                   Congratulations ! You have guessed it !\n\n");
+      console.log("\n" + "                   Good Job ! You nailed it !\n\n");
       startGame();
     }
   });

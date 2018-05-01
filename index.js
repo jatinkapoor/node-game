@@ -8,7 +8,7 @@ const question = {
   name: "letter",
   message: "Enter a letter: ",
   //Validation for input - the player can only input one letter at a time.
-  validate: function (input) {
+  validate: input => {
     if (input.length === 1 && /[a-z]/.test(input.trim().toLowerCase())) {
       return true;
     } else {

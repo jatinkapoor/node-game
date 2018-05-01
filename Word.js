@@ -31,7 +31,9 @@ const Word = function (word) {
 
     // if letter does not exist in word guesses remaining will be reduced by 1.
     if (!ifAnyMatch.includes(true)) {
+      
       this.guessesRemaining--;
+      console.log(`\t\t\t\t\t\t\t\t ***** Guesses Remaining *****        (${this.guessesRemaining})`);
     }
   }
 
@@ -44,7 +46,7 @@ const Word = function (word) {
       str += letter.display();
     });
 
-    console.log('                           ' + str + '       Guesses remaining:' + this.guessesRemaining);
+    console.log('                           ' + str );
   }
 
   // Checks if complete work has been guessed.
